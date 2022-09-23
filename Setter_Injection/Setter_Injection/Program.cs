@@ -47,6 +47,8 @@ public class Setter_Injection
     static void Main(string[] args)
     {
         SelectWriter sw = new SelectWriter();
+        // Setter Injection in the below line, we are using the writer property set method to create 
+        // dependeny object
         sw.writer = new DocumentWriter();
         sw.writer.write();
     }
