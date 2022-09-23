@@ -35,6 +35,8 @@ public class Method_Injection
     static void Main(string[] args)
     {
         SelectWriter sw = new SelectWriter();
+
+        // We are passing the dependency object as the method parameter below.
         sw.SelectWriterType(new LetterWriter());
     }
 }
